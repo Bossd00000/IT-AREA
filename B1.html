@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Area 101</title>
+</head>
+<body style="background: url('assets/bg.jpg') no-repeat center center fixed; background-size: cover;">
+    <style>
+        body{
+            background-color: rgb(41, 66, 32);
+        }
+        p, h1 {
+            color: white;
+            text-shadow: 3px 3px 5px green;
+        }
+        .navbar-brand img {
+            width: 20px;
+            height: auto;
+            margin-right: 5px;
+        }
+        .img-fluid{
+            width: 500px;
+        }
+        .zoom-in-out-animation {
+            animation: zoomInOut 4s infinite alternate;
+        }
+
+        @keyframes zoomInOut {
+            0% {
+                transform: scale(0.8);
+            }
+            50% {
+                transform: scale(1.0);
+            }
+            100% {
+                transform: scale(0.9);
+            }
+        }
+    </style>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <a class="navbar-brand text-light" href="#">
+            <img src="assets/logo.png" alt="Logo" class="img-fluid logo">
+            Area 101
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="Library.html">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="Developers.html">Developer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="About.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-3 text-center">
+                <img src="assets/alien.png" alt="Big Image" class="img-fluid zoom-in-out-animation">
+            </div>
+            <div class="col-md-6 text-center me-5">
+                <h1 class="text mt-3">ALIEN BOY</h1>
+                <p class="text-justify">In the enchanted realm of "Alien Boy," a captivating fairy tale unfolds, weaving a tapestry of cosmic wonders and self-discovery. This whimsical narrative transcends the ordinary, inviting readers into a world where the protagonist, a celestial wanderer, grapples not only with external extraterrestrial encounters but also with profound internal struggles of identity and belonging. The title itself acts as a magical portal, transporting us to the furthest reaches of imagination.</p>
+                <p class="text-justify">As our alien boy embarks on a fantastical journey through surreal landscapes, "Alien Boy" emerges as a profound metaphor for the human condition. It delicately explores the intricacies of being an outsider, resonating with the hearts of readers who have felt the echoes of alienation in their own life stories. The narrative becomes a powerful testament to the beauty of embracing one's uniqueness and the extraordinary facets that define our individual quests for meaning.</p>
+                <p class="text-justify">Within the pages of this celestial fairy tale, a literary cosmos comes to life, seamlessly blending the extraterrestrial with the deeply human. The title, akin to a celestial invitation, beckons readers to venture beyond the familiar borders and bravely confront the unknown. As the cosmic adventure unfolds, the alien boy's tale mirrors the universal struggle for authenticity and connection, echoing the timeless sentiments of resilience and the eternal quest for profound human bonds.</p>
+                <p class="text-justify">"Alien Boy" transcends mere storytelling; it becomes a vessel for contemplation, challenging readers to embark on their own introspective journeys. The narrative sparks reflection on the terrestrial existence we all share, prompting contemplation of the enigmatic threads that intricately bind us together. In this fairy tale of cosmic proportions, the alien boy's odyssey becomes a luminous guide, illuminating the path to understanding, unity, and the essence of our collective human experience.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
