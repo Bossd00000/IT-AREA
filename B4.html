@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B4 B4 Example</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://img.freepik.com/premium-photo/modern-office-buildings-financial-city-district_654181-548.jpg'); 
+            background-size: cover; 
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        nav {
+            background-color: #343a40;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffc107;
+        }
+
+        .box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+            gap: 2rem;
+        }
+
+        .box {
+            background-color: #fff;
+            padding: 1.5rem;
+            flex-basis: calc(33.333% - 2rem);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+    </nav>
+
+    <div class="box-container">
+        <div class="box box-1">
+            <h2>About</h2>
+            <p>This is the about page for our website. Here you can learn more about our company, our mission, and how we can help you.</p>
+            <p><strong>Company Name:</strong> XYZ Inc.</p>
+            <p><strong>Mission:</strong> To provide high-quality products and services to our customers.</p>
+            <p><strong>Contact Us:</strong> Email us at info@xyz.com or call us at 123-456-7890.</p>
+        </div>
+        <div class="box box-2">
+            <h2>Our Vision</h2>
+            <p>Our vision is to become the leading provider of innovative products and services in our industry.</p>
+        </div>
+        <div class="box box-3">
+            <h2>Our Team</h2>
+            <p>Our team consists of highly skilled professionals who are dedicated to providing the best possible service to our customers.</p>
+        </div>
+    </div>
+</body>
+</html>
