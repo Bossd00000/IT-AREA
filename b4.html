@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
     <title>Document</title>
     <style>
       body {
@@ -11,35 +15,24 @@
         font-family: Arial, sans-serif;
       }
       .header {
-        background-color: #f1f1f1;
+        background-color: #333;
+        color: #fff;
         padding: 20px;
         text-align: center;
       }
-      .nav-bar {
-        background-color: #333;
-        overflow: hidden;
-      }
-      .nav-bar a {
-        float: left;
-        display: block;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-      }
-      .nav-bar a:hover {
-        background-color: #ddd;
-        color: black;
-      }
+
       .container {
         display: flex;
-        height: 100vh;
-        align-items: absolute;
+        min-height: 100vh;
+        align-items: center;
+        justify-content: center;
       }
-      .left-row {
-        width: 50%;
-        padding: 20px;
+      .left-column {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
       }
+
       .right-column {
         width: 50%;
         padding: 20px;
@@ -48,23 +41,57 @@
         background-color: #f1f1f1;
         padding: 20px;
         margin: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
       .footer {
-        background-color: blue;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
       }
     </style>
   </head>
+
+  <-- Raymond Gonzales Commit -->
+  
   <body>
-    <div class="header">
-      <h1>Header</h1>
-    </div>
-    <div class="nav-bar">
-      <a href="#"></a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <a class="navbar-brand text-light" href="#">
+        <img src="assets/logo.png" alt="Logo" class="img-fluid logo" />
+        Area 101
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link text-light" href="B1.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="b2.html">Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="b3.html">Developer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-light" href="b4.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
     <div class="container">
-      <div class="left-row">
+      <div class="left-column">
         <div class="box">
           <h2>Box 1</h2>
           <p>BASTA BOX TO</p>
@@ -77,12 +104,15 @@
       <div class="right-column">
         <div class="box">
           <h2>Box 3</h2>
-          <p>BASTA BOX TO</p>
+          <p>raymond</p>
         </div>
       </div>
     </div>
     <div class="footer">
       <p>Footer</p>
     </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </body>
 </html>
